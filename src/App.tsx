@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -205,6 +206,8 @@ export default function App() {
         </div>
         <p className="text-gray-500 text-xs uppercase tracking-widest">&copy; 2024 Barbershop Lely. Ontworpen voor Excellentie.</p>
       </footer>
+      
+      <SpeedInsights />
     </div>
   );
 }
